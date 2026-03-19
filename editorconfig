@@ -1,0 +1,45 @@
+root = true
+
+[*]
+end_of_line = LF
+indent_size = 2
+charset = utf-8
+max_line_length = 880
+
+[*.md]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+max_line_length = 800
+
+[*.js]
+indent_style = space
+indent_size = 2
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+end_of_line = lf
+max_line_length = null
+
+[*.rb]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.py]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+
+[*.lua]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true

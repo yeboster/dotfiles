@@ -1,0 +1,20 @@
+[core]
+	excludesfile = ~/.gitignore
+[user]
+	signingkey = C1FC973CB9495973
+	name = Marco
+	email = marco@bon.so
+[gpg]
+	program = /opt/homebrew/bin/gpg
+[commit]
+	gpgsign = true
+[credential "https://github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true

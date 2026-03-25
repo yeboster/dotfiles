@@ -52,8 +52,8 @@ mkdir -p ~/.gnupg
 cat > ~/.gnupg/gpg-agent.conf << 'GPGAGENT'
 pinentry-program /opt/homebrew/bin/pinentry-mac
 allow-loopback-pinentry
-default-cache-ttl 28800
-max-cache-ttl 28800
+default-cache-ttl 34560000
+max-cache-ttl 34560000
 GPGAGENT
 cat > ~/.gnupg/gpg.conf << 'GPGCONF'
 use-agent

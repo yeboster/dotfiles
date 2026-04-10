@@ -32,7 +32,7 @@ eval "$(direnv hook zsh)"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # mise (version manager)
-eval "$(/opt/homebrew/bin/mise activate zsh)"
+eval "$(mise activate zsh)"
 
 # Local binaries
 export PATH="$HOME/.local/bin:$PATH"

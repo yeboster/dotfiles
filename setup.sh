@@ -4,7 +4,7 @@ set -e
 DOTFILES="$(cd "$(dirname "$0")" && pwd)"
 
 echo "==> Installing Homebrew dependencies"
-brew install coreutils curl git neovim fzf ripgrep fd autojump direnv gpg gh mise pinentry-mac
+brew install coreutils curl git neovim fzf ripgrep fd autojump direnv gpg gh mise pinentry-mac lazygit charmbracelet/tap/crush
 
 echo "==> Installing Oh My Zsh"
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
@@ -57,7 +57,7 @@ max-cache-ttl 34560000
 GPGAGENT
 cat > ~/.gnupg/gpg.conf << 'GPGCONF'
 use-agent
-pinentry-mode loopback
+pinentry-mode ask
 GPGCONF
 gpgconf --kill gpg-agent 2>/dev/null || true
 
